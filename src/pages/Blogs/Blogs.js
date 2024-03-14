@@ -60,7 +60,7 @@ function Blogs(props) {
   const [postIsActive, setPostIsActive] = useState("");
   const [formComplete, setFormComplete] = useState(false);
   const [formIncompleteError, setFormIncompleteError] = useState(false);
-  // const [postPrice , setPostPrice] = useState("");
+  const [postLink , setPostLink] = useState("");
   // const [postIsEvent , setPostIsEvent ] = useState("");
 
   const [postPositionNo, setPostPositionNo] = useState("");
@@ -69,7 +69,7 @@ function Blogs(props) {
   const [postLongDetail, setPostLongDetail] = useState("");
   const [postIsActiveStatus, setPostIsActiveStatus] = useState("");
   const [postTimestamp, setPostTimestamp] = useState("");
-  // const [postIsPrice , setPostIsPrice] = useState("");
+  const [postIsLink , setPostIsLink] = useState("");
   // const [postIsEventStatus , setPostIsEventStatus ] = useState("");
 
 
@@ -147,7 +147,7 @@ function Blogs(props) {
             postTopicName: postTopicName === "" ? postTopic : postTopicName,
             postLongDetail: postLongDetail === "" ? postLongDescription : postLongDetail,
             postIsActiveStatus: postIsActiveStatus === "" ? postIsActive : postIsActiveStatus,
-            // postIsPrice: postIsPrice === "" ? postPrice : postIsPrice,
+            postIsLink: postIsLink === "" ? postLink : postIsLink,
             // postIsEventStatus:postIsEventStatus ==="" ? postIsEvent : postIsEventStatus,
             postusername: currentUser.displayName,
             Postuserprofile: currentUser.photoURL,
@@ -174,7 +174,7 @@ function Blogs(props) {
             
             postLongDetail: postLongDescription,
             postIsActiveStatus: postIsActive,
-            // postIsPrice: postPrice,
+            postIsLink: postLink,
             // postIsEventStatus : postIsEvent,
             postusername: currentUser.displayName,
             Postuserprofile: currentUser.photoURL,
@@ -198,7 +198,7 @@ function Blogs(props) {
       setPostTopicName("");
       setPostLongDetail("");
       setPostIsActiveStatus("");
-      // setPostIsPrice("");
+      setPostIsLink("");
       // setPostIsEventStatus("");
       setPostTimestamp("");
 
@@ -211,7 +211,7 @@ function Blogs(props) {
     postLongDescription,
     postPosition,
     postIsActive,
-    // postPrice,
+    postLink,
     // postIsEvent,
     postId,
     e
@@ -225,7 +225,7 @@ function Blogs(props) {
     setPostLongDescription(postLongDescription);
     setPostPosition(postPosition);
     setPostIsActive(postIsActive);
-    // setPostPrice(postPrice);
+    setPostLink(postLink);
     // setPostIsEvent(postIsEvent);
     setPostId(postId);
     console.log(showModal);
@@ -297,14 +297,14 @@ function Blogs(props) {
                       onChange={(event) => setPostTopic(event.target.value)}
                       placeholder="Enter Receipe Name" />
                   </div>
-                  {/* <div className="form-group">
-                    <label for="topic">Price</label>
+                  <div className="form-group">
+                    <label for="topic">Link</label>
                     <input type="text" className="form-control" id="topic"
-                      defaultValue={editDetails ? postPrice : ""}
+                      defaultValue={editDetails ? postLink : ""}
                       // ref={postTopics}
-                      onChange={(event) => setPostPrice(event.target.value)}
-                      placeholder="Enter Price" />
-                  </div> */}
+                      onChange={(event) => setPostLink(event.target.value)}
+                      placeholder="Paste Link" />
+                  </div>
                   <div className="form-group">
                     <label for="description">Upload Image</label>
                     <div className="custom-file">
@@ -439,7 +439,7 @@ function Blogs(props) {
                           postTimestamp={item[1].postTimestamp}
                           onClickhandleDelete={(e) => handleDelete(item[0], e)}
                           postIsActiveStatus={item[1].postIsActiveStatus}
-                          // postIsPrice={item[1].postIsPrice}
+                          postIsLink={item[1].postIsLink}
                           // postIsEventStatus={item[1].postIsEventStatus}
                           onClickhandleEdit={(e) =>
                             handleEdit(
@@ -449,7 +449,7 @@ function Blogs(props) {
                               item[1].postLongDetail,
                               item[1].postPositionNo,
                               item[1].postIsActiveStatus,
-                              // item[1].postIsPrice,
+                              item[1].postIsLink,
                               // item[1].postIsEventStatus,
                               item[0],
                               e

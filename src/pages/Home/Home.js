@@ -10,10 +10,10 @@ function Home(props) {
         <Navbar />
         <div className="wrapper d-flex align-items-stretch">
         <Sidebar />
-            <div className="container main bg-light py-5">
-                <img src={KidoLogo} width="300" alt="icon"/>
+            <div className="container main bg-light py-">
+                <img src={KidoLogo} width="200" alt="icon"/>
                 <div className="our-achivements py-3">
-                    <h4 className="text-primary">Moragn Dashboard</h4>
+                    <h4 className="text-primary">Food Receipe Dashboard</h4>
                 </div>
             </div>
         </div>

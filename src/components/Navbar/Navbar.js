@@ -10,8 +10,8 @@ const Navbar=()=> {
         <div className="container-fluid">
 
             <nav className="navbar navbar-light bg-blue fixed-top bg-border-btm">
-                    <div className="text-center py-2 Usericon">
-                        <img src={KidoLogo} width="200" alt="icon"/>
+                    <div className="text-center py- Usericon">
+                        <img src={KidoLogo} width="60" alt="icon"/>
                     </div>
                     <div className="nav-sign-out">
                         <a className="nav-signout text-primary" onClick={()=>fire.auth().signOut()}><i className="fas fa-power-off pr-3"></i><small>Sign-Out</small></a>

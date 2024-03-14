@@ -85,14 +85,14 @@
             font-size: 8px; }
         #sidebar ul li a:hover {
           color: #fff!important;
-          background: rgb(240,169,81);
-          border-bottom: 1px solid rgb(240,169,81); }
+          background: #379960;
+          border-bottom: 1px solid #379960; }
       #sidebar ul li.active > a {
         background: transparent;
         color: #fff!important; }
         #sidebar ul li.active > a:hover {
-          background: rgb(240,169,81);
-          border-bottom: 1px solid rgb(240,169,81); }
+          background: #379960;
+          border-bottom: 1px solid #379960; }
     @media (max-width: 991.98px) {
       #sidebar {
         margin-left: -300px; }

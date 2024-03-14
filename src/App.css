@@ -82,22 +82,22 @@ a {
 }
 
 .btn-primary {
-    background-color: rgb(240,169,81);
-    border: 1px solid rgb(240,169,81);
+    background-color: #379960;
+    border: 1px solid #379960;
 }
 
 .text-primary {
-    color: rgb(240,169,81) !important;
+    color: #379960 !important;
 }
 
 .btn-outline-primary {
-    color: rgb(240,169,81);
-    border: 1px solid rgb(240,169,81);
+    color: #379960;
+    border: 1px solid #379960;
     font-size: 0.8em;
 }
 
 .btn-outline-primary:hover {
-    background-color: rgb(240,169,81);
+    background-color: #379960;
 }
 
 ::placeholder {
@@ -106,7 +106,7 @@ a {
 
 .bg-border-btm {
     /* background: #111213; */
-    border-bottom: 3px solid rgb(240,169,81);
+    border-bottom: 3px solid #379960;
 }
 
 a.nav-drop-ref {

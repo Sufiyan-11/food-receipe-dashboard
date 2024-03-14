@@ -9,7 +9,7 @@ const BlogData = (props) => {
   const { id,
     postImage,
     postTopicName,
-    postIsPrice,
+    postIsLink,
     postLongDetail,
     postTimestamp,
     onClickhandleEdit,
@@ -26,7 +26,7 @@ const BlogData = (props) => {
           <a className="view-data" data-toggle="modal" data-target={"#" + id}>
             <h4 className="card-title blog-post-title">{postTopicName}</h4>
             <p className="post-discription activity-discription card-text">{parse(`${postLongDetail.substring(0, 100)}`)}</p>
-            <p className='card-text'>₹{postIsPrice}</p>
+            <p className='card-text mb-3'>{postIsLink}</p>
           </a>
           <div className="view-session d-flex justify-content-between pb-2">
             <div className="user-profile-data">
