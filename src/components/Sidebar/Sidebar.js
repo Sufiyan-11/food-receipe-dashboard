@@ -37,7 +37,7 @@ const Sidebar=()=> {
             <NavLink exact to="/home" >Home</NavLink>
           </li>
           <li>
-            <NavLink exact to="/blogs" >Paintings</NavLink>
+            <NavLink exact to="/blogs" >Receipe</NavLink>
           </li>
           <li>
             <NavLink exact to="/gallery" >Gallery</NavLink>
@@ -65,7 +65,7 @@ const Sidebar=()=> {
             </div>
             </div>
           <li>
-            <NavLink exact to="/job-openings" >Careers</NavLink>
+            <NavLink exact to="/job-openings" >NewsLetter</NavLink>
           </li>
           <li>
             <NavLink exact to="/carrer-details" >Careers Data Details</NavLink>

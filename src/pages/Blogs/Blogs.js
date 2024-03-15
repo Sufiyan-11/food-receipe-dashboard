@@ -411,7 +411,7 @@ function Blogs(props) {
               <div className="form-row">
                 <div className="form-group col-md-11">
                   <label for="inputEmail4">Search based on Receipe Name</label>
-                  <input type="text" className="form-control" placeholder="search data" id="search-input" />
+                  <input type="text" className="form-control" placeholder="search receipe" id="search-input" />
                 </div>
                 <div className="form-group col-md-1 reset-btn">
                   <button className="btn btn-primary btn-sm" onClick={() => window.location.reload()}>Reset</button>
