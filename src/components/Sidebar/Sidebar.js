@@ -39,10 +39,11 @@ const Sidebar=()=> {
           <li>
             <NavLink exact to="/blogs" >Receipe</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink exact to="/gallery" >Gallery</NavLink>
-          </li>
-          <div class="accordion " id="accordionExample">
+          </li> */}
+
+          {/* <div class="accordion " id="accordionExample">
             <div id="drop-nav-1">
                 <li className="drop-nav">
                   <a className="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -63,15 +64,15 @@ const Sidebar=()=> {
                   </li>
                 </div>
             </div>
-            </div>
+            </div> */}
           <li>
             <NavLink exact to="/job-openings" >NewsLetter</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink exact to="/carrer-details" >Careers Data Details</NavLink>
-          </li>
+          </li> */}
           <li>
-            <a href="http://www.mlhngo.com/" target="_blank" rel="noopener noreferrer">MLH Trust</a>
+            <a href="https://food-receipee.netlify.app/#/" target="_blank" rel="noopener noreferrer">Food Receipe Website</a>
           </li>
           <li>
             <a  onClick={()=>fire.auth().signOut()}>Sign Out</a>
