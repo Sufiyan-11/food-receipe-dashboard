@@ -34,7 +34,7 @@ function ContactLeads(props) {
   const getPostData = () => {
     // Axios
     // .get(`https://educaretech-dashboard-default-rtdb.firebaseio.com/contactLead.json`)
-    firebase.database().ref(`contact`).get()
+    firebase.database().ref(`subscribe`).get()
     .then((response) => {
       // setPostData(response.data)
       setTimeout(setPostData(response.val()), 5000);
@@ -48,7 +48,7 @@ function ContactLeads(props) {
       if (window.confirm("Are you sure you want to delete the Post?")) {
       // Axios
       // .delete(`https://educaretech-dashboard-default-rtdb.firebaseio.com/contactLead/${postId}.json`)
-        firebase.database().ref(`contact/${postId}`).remove()
+        firebase.database().ref(`subscribe/${postId}`).remove()
         .then((response) => {
           alert("contact lead deleted succesfully");
           window.location.reload();
@@ -99,11 +99,9 @@ function ContactLeads(props) {
             <table className="table table-striped table-bordered">
               <thead className="thead-dark">
                 <tr>
-                  <th scope="col">Name</th>
+                  
                   <th scope="col">Email</th>
-                  <th scope="col">Contact</th>
-                  <th scope="col">Message</th>
-                  <th scope="col">Action</th>
+                 
                 </tr>
               </thead>
               <tbody id="c">
@@ -112,10 +110,9 @@ function ContactLeads(props) {
                       // var x = {item[1].status}
                       <>
                       <tr key={item[0]} className="job-open ">
-                        <td>{item[1].username}</td>
+                        
                         <td>{item[1].email}</td>
-                        <td>{item[1].number}</td>
-                        <td>{item[1].message}</td>
+                        
                         <td>                       
                           <a onClick={(e) => handleDelete(item[0], e)}><i className="fas fa-trash-alt text-danger pl-2"></i></a>
                         </td>
